@@ -11,18 +11,10 @@ var ListingSchema = new Schema({
     type: Number,
     default: 0
   },
-  created_date: {
-    type: Date,
-    default: Date.now
-  },
-  updated_date: {
-    type: Date,
-    default: Date.now
-  },
   status: {
     type: String,
     default: 'pending'
   }
-});
+}, {timestamps: true});
 
 module.exports = mongoose.model('Listings', ListingSchema);

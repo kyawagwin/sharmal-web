@@ -4,12 +4,12 @@ var mongoose = require('mongoose'),
   Listing = mongoose.model('Listings');
 
 exports.getAll = function(req, res) {
-  Listing.find({}, function(err, listing) {
+  Listing.find({}, function(err, listings) {
     if(err) {
       res.send(err);
     }
-
-    res.json(listing);
+    
+    res.json({"listings" : listings});
   });
 };
 
