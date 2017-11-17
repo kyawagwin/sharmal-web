@@ -1,6 +1,6 @@
 var express = require('express'), 
   app = express(),
-  port = process.env.port || 3000,
+  port = process.env.PORT || 8080,
   Listing = require('./api/models/listingModel'),
   mongoose = require('mongoose'),
   bodyParser = require('body-parser');

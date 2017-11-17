@@ -40,7 +40,7 @@ exports.update = function(req, res) {
       res.send(err);
     }
 
-    res.json(listing);
+    res.json({message: 'Listing successfully updated.'});
   });
 };
 

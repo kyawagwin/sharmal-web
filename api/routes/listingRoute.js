@@ -5,5 +5,5 @@ module.exports = function(app) {
 
   app.route('/api/listings').get(listing.getAll).post(listing.create);
 
-  app.route('/api/listings/:listingId').get(listing.get).put(listing.update).delete(listing.delete);
+  app.route('/api/listings/:id').get(listing.get).put(listing.update).delete(listing.delete);
 }
